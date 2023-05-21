@@ -1,7 +1,12 @@
 # This is a sample Python script.
 from typing import NamedTuple
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
 # Press Umschalt+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import numpy as np
 
 
 class ErrorClass(NamedTuple):
@@ -42,15 +47,50 @@ def find_min_max(data=ErrorClass(list(), list())):
     return [pos_min, neg_max]
 
 
+def plot_error(a, b, data=ErrorClass(list(), list())):
+    error = list()
+    psc = list()
+    counter = list()
+
+    for errP in data.pos:
+        error.append(errP[0]*1000)
+        psc.append(errP[1])
+        counter.append(errP[2])
+
+    for errN in data.neg:
+        error.append(errN[0]*1000)
+        psc.append(errN[1])
+        counter.append(errN[2])
+
+    plt.figure(figsize=(10, 10))
+    ax = plt.axes(projection='3d')
+    xx, yy = np.meshgrid(range(b-a), range(b-a))
+    ax.plot_surface(xx+a, yy+a, (yy - yy - 0), alpha=0.7, color='green')
+    ymax = (1 / 512000 * 120000000) / b
+    linesp = np.linspace(ymax, b, 1000)
+    yline = (1/512000 * 120000000) / linesp
+    ax.plot3D(linesp, yline, 0, 'red')
+
+    fig = ax.scatter3D(psc, counter, error)
+
+    ax.set_xlabel('PSC')
+    ax.set_ylabel('Counter')
+    ax.set_zlabel('Error')
+    # ax.set_zlim(-0.01, 0.01)
+
+    plt.show()
+
+
 err_list = list()
 
-for i in range(1, 100):
-    for j in range(1, 100):
-        err_list.append(calc_error(i, j, 120000000, 1024000))
+a = 0
+b = 25
+
+for i in range(a, b):
+    for j in range(a, b):
+        err_list.append(calc_error(i, j, 120000000, 512000))
 
 pos_neg_err = sort_pos_neg(err_list)
-print(pos_neg_err.neg)
-print(pos_neg_err.pos)
 
 min_max = find_min_max(pos_neg_err)
 
@@ -81,3 +121,4 @@ else:
     print("Counter Value =", min_max[1][2])
     print("*******************************")
 
+plot_error(a, b, pos_neg_err)
