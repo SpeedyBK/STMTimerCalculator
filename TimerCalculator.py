@@ -150,4 +150,4 @@ else:
 if a - b > -1000:
     plot_error(a, b, baseclock, targetfrq, pos_neg_err)
 else:
-    print("lb/ub difference is to large for plotting! Max value for plotting is lb - ub = 1000.")
+    print("lb/ub difference is to large for plotting! Max value for plotting is lb - ub = -1000.")
