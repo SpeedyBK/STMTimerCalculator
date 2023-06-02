@@ -1,10 +1,9 @@
-# This is a sample Python script.
+# Little commandline calculator to find optimal settings for STM32 timers.
+# Author: Benjamin Lagershausen-Keßler (BLagershausen@uni-kassel.de)
+# All rights reserved.
+
 from typing import NamedTuple
 import matplotlib.pyplot as plt
-
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import numpy as np
 
 # Parsing command line arguments:
