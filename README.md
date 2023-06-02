@@ -9,10 +9,12 @@ Parameters:
 --targetfreq: The desired targetfrequency for the timer. The timerperiode can be calculated by 1/targetfreq.
 
 Commandline Example:
+
 Our timer has a base clock of 10 MHz, and we want to get a typical samplefrequency for audio signals.
 python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 
 Output:
+
 Lower Boundry:  5
 Upper Boundry:  25
 Baseclock:  10000000
