@@ -7,7 +7,7 @@ Just a little python commandline calculator, to find the optimal settings for ti
 
 --ub: Upper Bound, the maximum value for prescaler and counter
 
---baseclock: Baseclock the Timer is running on your microcontroller
+--baseclock: Clock on which the timer is running on your microcontroller
 
 --targetfreq: The desired targetfrequency for the timer. The timerperiode can be calculated by 1/targetfreq.
 
