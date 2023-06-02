@@ -18,6 +18,7 @@ Our timer has a base clock of 10 MHz, and we want to get a typical samplefrequen
 python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 
 ### Output:
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 -- Best values to get a frequency above the target frequency:
 
@@ -37,6 +38,8 @@ Prescaler = 12
 Counter Value = 19
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+### Plot:
 
 Plot with prescaler and countervalues on X- and Y-axis, and the resulting error on Z-axis. The green plane shows the plane with 0 error.
 The red line shows all optimal values, assuming all real numbers were available, not only integers. 
