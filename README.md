@@ -3,13 +3,13 @@
 Just a little python commandline calculator, to find the optimal settings for timers on STM 32 microcontrollers. It takes 4 parameters to calculate the optimal values for prescaler and counter on STM32 Timers. 
 
 ### Parameters:
---lb: Lower Bound, the minimum value for prescaler and counter
+--lb: Lower Bound, minimum value for prescaler and counter
 
---ub: Upper Bound, the maximum value for prescaler and counter
+--ub: Upper Bound, maximum value for prescaler and counter
 
 --baseclock: Clock on which the timer is running on your microcontroller
 
---targetfreq: The desired targetfrequency for the timer. The timerperiode can be calculated by 1/targetfreq.
+--targetfreq: Desired targetfrequency for your timer. The timerperiode can be calculated by 1/targetfreq.
 
 ### Commandline Example:
 
