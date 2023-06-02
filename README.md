@@ -20,7 +20,7 @@ python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 ### Output:
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
--- Best values to get a frequency above the target frequency:
+-- Values to get the closest frequency above the target frequency:
 
 Error = 1.757369614512462e-07
 
@@ -29,7 +29,7 @@ Prescaler = 15
 Counter Value = 15
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
--- Best values to get a frequency below the target frequency:
+-- Values to get the closest frequency below the target frequency:
 
 Error = -1.2426303854875091e-07
 
