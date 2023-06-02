@@ -2,18 +2,21 @@
 
 Just a little calculator, to find the optimal settings for timers on STM 32 microcontrollers. It takes 4 parameters to calculate the optimal values for prescaler and counter on STM32 Timers. 
 
-Parameters:
---lb: Lower Bound, the minimum value for prescaler and counter \n
+###Parameters:
+--lb: Lower Bound, the minimum value for prescaler and counter
+
 --ub: Upper Bound, the maximum value for prescaler and counter
+
 --baseclock: Baseclock the Timer is running on your microcontroller
+
 --targetfreq: The desired targetfrequency for the timer. The timerperiode can be calculated by 1/targetfreq.
 
-Commandline Example:
+###Commandline Example:
 
 Our timer has a base clock of 10 MHz, and we want to get a typical samplefrequency for audio signals.
 python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 
-Output:
+###Output:
 
 Lower Boundry:  5
 Upper Boundry:  25
