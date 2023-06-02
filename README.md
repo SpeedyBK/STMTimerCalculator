@@ -18,21 +18,24 @@ Our timer has a base clock of 10 MHz, and we want to get a typical samplefrequen
 python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 
 ### Output:
-
-Lower Boundry:  5
-Upper Boundry:  25
-Baseclock:  10000000
-Target Frequency:  44100
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 -- Best values to get a frequency above the target frequency:
+
 Error = 1.757369614512462e-07
+
 Prescaler = 15
+
 Counter Value = 15
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 -- Best values to get a frequency below the target frequency:
+
 Error = -1.2426303854875091e-07
+
 Prescaler = 12
+
 Counter Value = 19
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 Plot with prescaler and countervalues on X- and Y-axis, and the resulting error on Z-axis. The green plane shows the plane with 0 error.
