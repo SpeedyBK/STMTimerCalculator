@@ -18,12 +18,12 @@ Upper Boundry:  25
 Baseclock:  10000000
 Target Frequency:  44100
 *******************************
-// Best values to get a frequency above the target frequency:
+-- Best values to get a frequency above the target frequency:
 Error = 1.757369614512462e-07
 Prescaler = 15
 Counter Value = 15
 -------------------------------
-// Best values to get a frequency below the target frequency:
+-- Best values to get a frequency below the target frequency:
 Error = -1.2426303854875091e-07
 Prescaler = 12
 Counter Value = 19
