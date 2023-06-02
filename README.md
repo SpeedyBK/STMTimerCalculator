@@ -3,7 +3,7 @@
 Just a little calculator, to find the optimal settings for timers on STM 32 microcontrollers. It takes 4 parameters to calculate the optimal values for prescaler and counter on STM32 Timers. 
 
 Parameters:
---lb: Lower Bound, the minimum value for prescaler and counter
+--lb: Lower Bound, the minimum value for prescaler and counter \n
 --ub: Upper Bound, the maximum value for prescaler and counter
 --baseclock: Baseclock the Timer is running on your microcontroller
 --targetfreq: The desired targetfrequency for the timer. The timerperiode can be calculated by 1/targetfreq.
