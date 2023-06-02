@@ -14,6 +14,7 @@ Just a little calculator, to find the optimal settings for timers on STM 32 micr
 ### Commandline Example:
 
 Our timer has a base clock of 10 MHz, and we want to get a typical samplefrequency for audio signals.
+
 python TimerCalculator.py --lb 5 --ub 25 --baseclock 10000000 --targetfreq 44100
 
 ### Output:
