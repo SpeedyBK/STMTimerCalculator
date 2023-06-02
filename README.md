@@ -41,7 +41,7 @@ Counter Value = 19
 
 ### Plot:
 
-Plot with prescaler and countervalues on X- and Y-axis, and the resulting error on Z-axis. The green plane shows the plane with 0 error.
+Plot with prescaler and countervalues on X- and Y-axis, and the resulting error on Z-axis. The green plane shows the plane with no error.
 The red line shows all optimal values, assuming all real numbers were available, not only integers. 
 
 ![Figure_1](https://github.com/SpeedyBK/STMTimerCalculator/assets/34403003/b90cfc61-12d0-4ce2-94c1-6f6f47ff8110)
