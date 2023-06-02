@@ -1,6 +1,6 @@
 # STMTimerCalculator
 
-Just a little calculator, to find the optimal settings for timers on STM 32 microcontrollers. It takes 4 parameters to calculate the optimal values for prescaler and counter on STM32 Timers. 
+Just a little python commandline calculator, to find the optimal settings for timers on STM 32 microcontrollers. It takes 4 parameters to calculate the optimal values for prescaler and counter on STM32 Timers. 
 
 ### Parameters:
 --lb: Lower Bound, the minimum value for prescaler and counter
